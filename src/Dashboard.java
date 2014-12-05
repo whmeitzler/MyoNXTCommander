@@ -34,8 +34,10 @@ public class Dashboard extends JFrame
   private static  JButton myoButton, robotButton;
   private static JLabel poseLabel, rollLabel, pitchLabel, stateLabel, speedLabel, steerLabel, statusLabel;
   private static float steeringFactor, speedFactor;
-  private static boolean listening = true, botConnected = false, myoConnected = false;
+  private static boolean listening = true, botConnected, myoConnected;
   public Dashboard(){
+	  botConnected = false;
+	  myoConnected = false;
 	  setDefaultCloseOperation(EXIT_ON_CLOSE);
 	  setTitle ("Myo Interpereter");
 	  setBounds(650,350,500,500);
